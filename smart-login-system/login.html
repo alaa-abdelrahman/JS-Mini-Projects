@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Login Page</title>
+  </head>
+
+  <body class="vh-100 d-flex align-items-center">
+    <div class="container">
+      <div class="row justify-content-center">
+        <form
+          class="col-lg-6 col-md-8 col-sm-10 p-5 shadow d-flex flex-column justify-content-center h-75 rounded-5"
+        >
+          <h2 class="text-center mb-5 fw-bolder text-uppercase">
+            Smart Login System
+          </h2>
+          <input
+            type="email"
+            placeholder="Enter Your Email"
+            id="loginEmail"
+            class="form-control mb-3"
+          />
+          <p id="loginEmailError" class="small text-danger"></p>
+
+          <input
+            type="password"
+            placeholder="Enter Your password"
+            id="loginPassword"
+            class="form-control mb-4"
+          />
+          <p id="loginPasswordError" class="small text-danger"></p>
+
+          <button class="formBtn btn text-center mb-3" id="loginBtn">
+            Log in
+          </button>
+          <p class="text-center">
+            Don’t have an account?
+            <a href="signup.html" class="ms-1">Sign Up</a>
+          </p>
+        </form>
+        <div id="signupMessage" class="d-none notification">
+          <span>User does not exist. Please Sign Up.</span>
+          <button
+            type="button"
+            id="closeMessage"
+            class="btn-close btn-close-white"
+            aria-label="Close"
+          ></button>
+        </div>
+      </div>
+    </div>
+    <!-- #region JavaScript -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- #endregion -->
+  </body>
+</html>
