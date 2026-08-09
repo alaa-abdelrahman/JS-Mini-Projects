@@ -7,7 +7,7 @@ A collection of mini JavaScript projects built to practice and strengthen my Jav
 1.QR Code Generator
 A simple QR Code Generator built with HTML, CSS, and JavaScript.
 
----
+====================
 
 2.Login System
 A simple Login & Sign Up system using JavaScript and Local Storage.
