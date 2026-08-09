@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>QR Generator</title>
+  </head>
+
+  <body class="d-flex align-items-center justify-content-center vh-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="col-xl-5 col-lg-6 col-md-8 col-sm-10 bg-white rounded-2 d-flex align-items-center flex-column"
+        >
+          <h3 class="lead fs-1 text-uppercase mt-5 mb-3 fw-light">
+            QR Code Generator
+          </h3>
+          <p class="mb-3" style="color: #777777">
+            Paste a url or enter text to create QR code
+          </p>
+          <input
+            type="text"
+            class="form-control lead w-75 my-3 mx-auto py-3"
+            placeholder="Enter a text or URL"
+            id="qrInput"
+          />
+          <p id="errorMessage">Enter a text or URL</p>
+          <div class="btnContainer d-flex py-2 mt-3 mb-5 w-75 gap-3">
+            <button id="generateBtn" class="w-75 fw-normal fs-4">
+              Generate QR Code
+            </button>
+            <button
+              id="clearBtn"
+              class="w-25 fw-normal fs-4 btn btn-outline-danger"
+            >
+              clear
+            </button>
+          </div>
+          <div id="qrCode">
+            <img src="" id="qrCodeImg" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #region JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- #endregion -->
+  </body>
+</html>
